@@ -5,7 +5,7 @@ class Notification extends Component {
     render(){
         return(
             <>
-            <h3>
+            <h3 className="title__message">
                 {this.props.message}
             </h3>
             </>

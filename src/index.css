@@ -94,3 +94,7 @@ code {
 .statistic__item{
   margin-left: 10px;
 }
+
+.title__message{
+  text-align: center;
+}

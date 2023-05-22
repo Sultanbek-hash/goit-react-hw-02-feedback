@@ -1,15 +1,12 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import Notification from "./Notification";
+
 
 const Statistics = ({good, neutral, bad, total, positivePercentge}) =>{
     return(
         <>
         <div className="statistic__div">
         <h2 className="heading">Statistics</h2>
-        {total === 0 ? (
-            <Notification message="No feedback given" />
-        ):(
             <ul className="statistic__list">
             <li className="statistic__item">
                 <span>Good:</span>
@@ -32,7 +29,6 @@ const Statistics = ({good, neutral, bad, total, positivePercentge}) =>{
                 <span>{positivePercentge}%</span>
             </li>
         </ul>
-        )}
         </div>
         </>
     );
